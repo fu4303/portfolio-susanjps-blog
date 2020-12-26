@@ -1,0 +1,16 @@
+---
+title: home
+layout: default
+---
+
+<h1><em>Susan Pan</em></h1>
+<!-- Image of me -->
+<h2>Recent Posts</h2>
+{% for post in site.posts %}
+  {% include post_card.html %}
+{% endfor %}
+
+<h2>Top Posts</h2>
+{% for post in site.posts %}
+  {% include recommended_posts.html %}
+{% endfor %}

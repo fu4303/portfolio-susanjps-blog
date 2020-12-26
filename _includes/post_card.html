@@ -1,0 +1,23 @@
+
+<div class="post-card">
+  <a href="{{ post.url }}"><img src="{{post.img}}"></a>
+  <div class="post-card-content">
+    <div class="post-card-content-txt">
+      <p class="small-txt">
+        <img src="https://img.icons8.com/officexs/16/000000/calendar.png"/>
+        {{ post.date | date: "%a %-d %B %Y" }} - {{ post.read_time}}
+      </p>
+      <a href="{{ post.url }} "><h4>{{ post.title }}</h4></a>
+      <p>{{ post.excerpt }} <span><a href="{{post.url}}"> Read More... </a></span></p>
+
+    </div>
+    <div class="post-card-footer">
+      <p class="small-txt"><strong>Tags: </strong></p>
+      {% for tag in post.tags %}
+        <a class="tag small-txt">{{ tag }}</a>
+      {% endfor %}
+      <!-- <p class="small-txt">Write a comment</p> -->
+      <p class="small-txt">11 <img src="https://img.icons8.com/cotton/24/000000/like--v1.png"/></p>
+    </div>
+  </div>
+</div>

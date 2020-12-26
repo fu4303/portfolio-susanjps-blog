@@ -1,0 +1,25 @@
+.form-wrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 500px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  input, textarea {
+    border: 1px solid black;
+    padding: 8px;
+    font-family: $bodyFont;
+    font-size: 0.8rem;
+    flex-grow: 1;
+  }
+  input[type=submit] {
+    color: black;
+  }
+}

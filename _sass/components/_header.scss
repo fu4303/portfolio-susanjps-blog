@@ -1,0 +1,17 @@
+.header {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0px;
+  position: sticky;
+  top: 0px;
+  background-color: $backgroundColor;
+  a {
+    padding: 8px;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  a:hover {
+    border: solid 1px black;
+  }
+}

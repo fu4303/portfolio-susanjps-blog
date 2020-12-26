@@ -1,0 +1,21 @@
+<div class="footer">
+  <h3>Anything you'd like to chat about?</h3>
+  <div class="form-wrapper">
+    <form id="message-form">
+      <div class="form-top-row">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="email" placeholder="Email">
+      </div>
+      <textarea name="message" form="message-form" rows="2" placeholder="Enter a message..."></textarea>
+      <input type="submit" value="Send!">
+    </form>
+  </div>
+  <h3>I'd love to connect!</h3>
+  <div class="social-links">
+    <a href="{{ site.twitter }}"><img src="https://img.icons8.com/bubbles/75/000000/twitter.png"/></a>
+    <a href="{{ site.linkedin }}"><img src="https://img.icons8.com/bubbles/75/000000/linkedin.png"/></a>
+    <a href="{{ site.github }}"><img src="https://img.icons8.com/bubbles/75/000000/github.png"/></a>
+    <a href="{{ site.codepen }}">{% include codepen-icon.html %}</a>
+  </div>
+  <p>© 2020 susanjsp. Made with <i class="fas fa-heart"></i> and plenty of <i class="fas fa-mug-hot"></i> .</p>
+</div>

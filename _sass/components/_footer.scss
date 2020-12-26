@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  width: 100%;
+  background-color: #dfdfdf;
+  padding-top: 48px;
+  p {
+    margin: 0;
+  }
+  h3 {
+    font-family: $header-txt;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  & > * {
+    padding: 24px 0px;
+  }
+}

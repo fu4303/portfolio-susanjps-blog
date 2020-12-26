@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap');
+
+$header-txt: 'Playfair Display', serif;
+$bodyFont: 'Lato', sans-serif;
+
+h1 {
+  font-size: 3rem;
+  font-family: $header-txt;
+  text-align: center;
+}
+h2 {
+  font-family: $header-txt;
+  font-size: 2rem;
+}

@@ -1,0 +1,48 @@
+// Import configuration
+@import "config/colors";
+@import "config/fonts";
+
+// Import external libraries
+@import "../_data/scss/fontawesome.scss";
+@import "../_data/scss/brands.scss";
+@import "../_data/scss/solid.scss";
+
+// Import components & pages
+@import "components/index";
+@import "pages/post_show.scss";
+
+
+// Root or body styles
+:root {
+  a {
+    color: $main-txt;
+    text-decoration: none;
+  }
+  a:hover {
+    color: none;
+  }
+}
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  font-weight: 200;
+  margin: 0;
+}
+
+.container {
+  margin: 0px;
+  max-width: 900px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 0px 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    margin: 0px auto;
+  }
+}
