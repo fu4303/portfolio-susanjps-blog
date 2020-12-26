@@ -1,6 +1,6 @@
-### My Blog
+## Welcome to my blog
 
-  Welcome to my personal experiment into making a static blog website.
+  This is my personal experiment into making a static blog website.
 
   Come and read about the trials, tribulations and success I've faced in my journey into tech.
   
