@@ -1,7 +1,8 @@
 .post-card {
   border: 1px solid black;
   display: flex;
-  height: 280px;
+  height: 300px;
+  margin: 24px 0px;
   a > img {
   height: 100%;
   width: 100%;
@@ -16,7 +17,7 @@
   flex-direction: column;
   justify-content: space-between;
   h4, h5 {
-    margin: 4px 0px;
+    margin: 5px 0px;
   }
   h4 {
     font-size: 1.5rem;
@@ -25,25 +26,15 @@
     font-size: 1rem;
   }
   p {
-    line-height: 1.5h;
-  }
-}
-.post-card-content-txt {
-  flex: 0 1 auto;
-  & > p {
-    display: inline;
-  }
-  span > a {
-    text-transform: uppercase;
+    line-height: 1.5rem;
     font-size: 0.9rem;
-    text-decoration: underline;
   }
 }
 .post-card-footer {
   border-top: 1px solid black;
+  padding-top: 8px;
   display: flex;
   justify-content: space-between;
-  padding-top: 8px;
 }
 .small-txt {
   margin: 0;

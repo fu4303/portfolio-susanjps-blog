@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   width: 100%;
-  background-color: #dfdfdf;
+  background-color: #eedfff;
   padding-top: 48px;
   p {
     margin: 0;
@@ -13,5 +13,25 @@
   }
   & > * {
     padding: 24px 0px;
+  }
+  i {
+    margin: 0px 8px;
+  }
+  .social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 5%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) {
+  .footer {
+    .social-links {
+    display: block;
+    }
+    br {
+      display: none;
+    }
   }
 }

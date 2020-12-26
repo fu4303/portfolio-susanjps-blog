@@ -19,30 +19,31 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Susan Pan
-email: susanjsp@protonmail.com
-author: Susan Pan
-timezone: Australia/Brisbane # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-description: >- # this means to ignore newlines until "baseurl:"
-  I created this blog to document my career journey from Pharmacist to Software Engineering.
-  I hope to solidify my learning and to also develop my written communication skills through writing technical posts about web development.
+description: I created this blog to document my career journey from Pharmacist to Software Engineering. I hope to solidify my learning and to also develop my written communication skills through writing technical posts about web development.
 
+author: Susan Pan
+email: susanjsp@protonmail.com
+timezone: Australia/Brisbane # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+locale: en_AU
+
+url: "http://susanjsp.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter: "http://www.twitter.com/susanjsp_"
 github:  "http://github.com/susanjsp"
 codepen: "https://codepen.io/susanjsp"
 linkedin: "https://www.linkedin.com/in/susanpan96/"
 
-# Plugins
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+
+# Plugins & Gems
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Gems
-gems:
-  - jekyll-fontawesome-svg
-
 # Other
 excerpt_separator: <!--break-->
+

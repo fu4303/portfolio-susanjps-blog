@@ -9,29 +9,3 @@ $green:  #baffb1;
 $purple: #ab86ff;
 $blue: #acf2ff;
 $yellow: #ffe02e;
-
-.hov-pink {
-  &:hover {
-    box-shadow: 3px 3px 0px $pink;
-  }
-}
-.hov-green {
-  &:hover {
-    box-shadow: 3px 3px 0px $green;
-  }
-}
-.hov-purple {
-  &:hover {
-    box-shadow: 3px 3px 0px $purple;
-  }
-}
-.hov-blue {
-  &:hover {
-    box-shadow: 3px 3px 0px $blue;
-  }
-}
-.hov-yellow {
-  &:hover {
-    box-shadow: 3px 3px 0px $yellow;
-  }
-}

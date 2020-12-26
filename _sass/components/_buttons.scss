@@ -3,3 +3,36 @@ button {
   padding: 6px;
   text-transform: capitalize;
 }
+.btn {
+  text-transform: uppercase;
+  padding: 8px;
+  transition: 0.1s ease-out;
+  &:hover {
+    border: solid 1px black;
+  }
+}
+.hov-pink {
+  &:hover {
+    box-shadow: 3px 3px 0px $pink;
+  }
+}
+.hov-green {
+  &:hover {
+    box-shadow: 3px 3px 0px $green;
+  }
+}
+.hov-purple {
+  &:hover {
+    box-shadow: 3px 3px 0px $purple;
+  }
+}
+.hov-blue {
+  &:hover {
+    box-shadow: 3px 3px 0px $blue;
+  }
+}
+.hov-yellow {
+  &:hover {
+    box-shadow: 3px 3px 0px $yellow;
+  }
+}

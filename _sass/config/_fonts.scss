@@ -4,11 +4,18 @@ $header-txt: 'Playfair Display', serif;
 $bodyFont: 'Lato', sans-serif;
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: $header-txt;
   text-align: center;
+  font-style: italic;
 }
 h2 {
   font-family: $header-txt;
   font-size: 2rem;
+}
+
+@media (min-width: 450px) {
+  h1 {
+    font-size: 3rem;
+  }
 }

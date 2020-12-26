@@ -1,0 +1,11 @@
+I"<p>Jekyll is a framework that makes creating static websites super simple. A static website is one where there isn’t too much server-side programming. These types of websites don’t need the in-depth, extensive network of heavier frameworks such as Ruby on Rails. <!-- Break --> Some examples include:</p>
+<ul>
+  <li>Blogs</li>
+  <li>Company websites</li>
+  <li>Micro-sites</li>
+  <li>Educational websites</li>
+</ul>
+
+<p>As I jumped from Rails to Jekyll, the installation and syntax was relatively straight-forward, I didn’t bump into any obstacles until I tried using some of the jekyll gems - but more on that later. If you’re just beginning, the Jekyll documentation is superb. Everything is explained well with great examples to follow. If you get stuck, look there first!</p>
+
+:ET

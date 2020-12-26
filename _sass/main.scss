@@ -4,12 +4,13 @@
 
 // Import external libraries
 @import "../_data/scss/fontawesome.scss";
+@import "../_data/scss/regular.scss";
 @import "../_data/scss/brands.scss";
 @import "../_data/scss/solid.scss";
 
 // Import components & pages
 @import "components/index";
-@import "pages/post_show.scss";
+@import "pages/post_page.scss";
 
 
 // Root or body styles
@@ -24,6 +25,7 @@
 }
 
 body {
+  min-width: 360px;
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
@@ -32,10 +34,11 @@ body {
 }
 
 .container {
-  margin: 0px;
+  margin: 2.5%;
   max-width: 900px;
   position: relative;
 }
+
 @media (min-width: 768px) {
   .container {
     margin: 0px 10vw;

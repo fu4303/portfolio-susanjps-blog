@@ -1,17 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap");
-.hov-pink:hover { box-shadow: 3px 3px 0px #ff9aee; }
-
-.hov-green:hover { box-shadow: 3px 3px 0px #baffb1; }
-
-.hov-purple:hover { box-shadow: 3px 3px 0px #ab86ff; }
-
-.hov-blue:hover { box-shadow: 3px 3px 0px #acf2ff; }
-
-.hov-yellow:hover { box-shadow: 3px 3px 0px #ffe02e; }
-
-h1 { font-size: 3rem; font-family: "Playfair Display", serif; text-align: center; }
+h1 { font-size: 2rem; font-family: "Playfair Display", serif; text-align: center; font-style: italic; }
 
 h2 { font-family: "Playfair Display", serif; font-size: 2rem; }
+
+@media (min-width: 450px) { h1 { font-size: 3rem; } }
 
 /*! Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
 .fa, .fas, .far, .fal, .fad, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
@@ -3016,6 +3008,11 @@ readers do not read off random characters that represent icons */
 .sr-only-focusable:active, .sr-only-focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
 /*! Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
+@font-face { font-family: 'Font Awesome 5 Free'; font-style: normal; font-weight: 400; font-display: block; src: url("./webfonts/fa-regular-400.eot"); src: url("./webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-regular-400.woff2") format("woff2"), url("./webfonts/fa-regular-400.woff") format("woff"), url("./webfonts/fa-regular-400.ttf") format("truetype"), url("./webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far { font-family: 'Font Awesome 5 Free'; font-weight: 400; }
+
+/*! Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
 @font-face { font-family: 'Font Awesome 5 Brands'; font-style: normal; font-weight: 400; font-display: block; src: url("./webfonts/fa-brands-400.eot"); src: url("./webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-brands-400.woff2") format("woff2"), url("./webfonts/fa-brands-400.woff") format("woff"), url("./webfonts/fa-brands-400.ttf") format("truetype"), url("./webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
@@ -3025,13 +3022,15 @@ readers do not read off random characters that represent icons */
 
 .fa, .fas { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
 
-.header { text-transform: uppercase; display: flex; justify-content: space-between; width: 100%; padding: 16px 0px; position: sticky; top: 0px; background-color: #ffffff; }
+.header { text-transform: uppercase; padding: 16px 0px; background-color: #ffffff; }
 
-.header a { padding: 8px; transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+.header a { padding: 8px; transition: 0.1s ease-out; }
 
 .header a:hover { border: solid 1px black; }
 
-.footer { text-align: center; width: 100%; background-color: #dfdfdf; padding-top: 48px; }
+@media (min-width: 450px) { .header { position: sticky; top: 0px; display: flex; justify-content: space-between; width: 100%; } }
+
+.footer { text-align: center; width: 100%; background-color: #eedfff; padding-top: 48px; }
 
 .footer p { margin: 0; }
 
@@ -3039,27 +3038,27 @@ readers do not read off random characters that represent icons */
 
 .footer > * { padding: 24px 0px; }
 
-.post-card { border: 1px solid black; display: flex; height: 280px; }
+.footer i { margin: 0px 8px; }
+
+.footer .social-links { display: grid; grid-template-columns: 1fr 1fr; margin: 0px 5%; text-align: center; }
+
+@media (min-width: 550px) { .footer .social-links { display: block; } .footer br { display: none; } }
+
+.post-card { border: 1px solid black; display: flex; height: 300px; margin: 24px 0px; }
 
 .post-card a > img { height: 100%; width: 100%; border-right: 1px solid black; }
 
 .post-card-content { box-sizing: border-box; height: 100%; padding: 32px 32px 16px 32px; display: flex; flex-direction: column; justify-content: space-between; }
 
-.post-card-content h4, .post-card-content h5 { margin: 4px 0px; }
+.post-card-content h4, .post-card-content h5 { margin: 5px 0px; }
 
 .post-card-content h4 { font-size: 1.5rem; }
 
 .post-card-content h5 { font-size: 1rem; }
 
-.post-card-content p { line-height: 1.5h; }
+.post-card-content p { line-height: 1.5rem; font-size: 0.9rem; }
 
-.post-card-content-txt { flex: 0 1 auto; }
-
-.post-card-content-txt > p { display: inline; }
-
-.post-card-content-txt span > a { text-transform: uppercase; font-size: 0.9rem; text-decoration: underline; }
-
-.post-card-footer { border-top: 1px solid black; display: flex; justify-content: space-between; padding-top: 8px; }
+.post-card-footer { border-top: 1px solid black; padding-top: 8px; display: flex; justify-content: space-between; }
 
 .small-txt { margin: 0; color: #7c7c7c; font-weight: 200; font-style: italic; font-size: 0.9rem; }
 
@@ -3075,6 +3074,20 @@ form input[type=submit] { color: black; }
 
 button { border: solid 1px black; padding: 6px; text-transform: capitalize; }
 
+.btn { text-transform: uppercase; padding: 8px; transition: 0.1s ease-out; }
+
+.btn:hover { border: solid 1px black; }
+
+.hov-pink:hover { box-shadow: 3px 3px 0px #ff9aee; }
+
+.hov-green:hover { box-shadow: 3px 3px 0px #baffb1; }
+
+.hov-purple:hover { box-shadow: 3px 3px 0px #ab86ff; }
+
+.hov-blue:hover { box-shadow: 3px 3px 0px #acf2ff; }
+
+.hov-yellow:hover { box-shadow: 3px 3px 0px #ffe02e; }
+
 .blog-show-container .small-txt { text-align: center; }
 
 .blog-show-container h1 { margin-top: 0px; }
@@ -3083,17 +3096,23 @@ button { border: solid 1px black; padding: 6px; text-transform: capitalize; }
 
 article { margin: 0px 3vw 3vw 3vw; }
 
-article p { line-height: 2.2rem; margin-top: 2vw; font-size: 1.1rem; }
+article p { line-height: 2rem; margin-top: 2vw; font-size: 1rem; }
 
-#poster-img { width: 100%; height: 500px; object-fit: cover; object-position: 50%; border: solid 1px black; padding: 8px; background-clip: content-box; background-color: rgba(255, 255, 255, 0); }
+#poster-img { width: 95%; height: auto; object-fit: cover; border: solid 1px black; margin-left: 2.5%; }
+
+.prev-next-links { margin: 0px 3vw 3vw 3vw; display: flex; justify-content: space-between; }
+
+.prev-next-links a { font-family: "Playfair Display", serif; }
+
+@media (min-width: 768px) { p { line-height: 2.2rem; font-size: 1.1rem; } }
 
 :root a { color: #000000; text-decoration: none; }
 
 :root a:hover { color: none; }
 
-body { background: #ffffff; color: #000000; font-family: "Lato", sans-serif; font-weight: 200; margin: 0; }
+body { min-width: 360px; background: #ffffff; color: #000000; font-family: "Lato", sans-serif; font-weight: 200; margin: 0; }
 
-.container { margin: 0px; max-width: 900px; position: relative; }
+.container { margin: 2.5%; max-width: 900px; position: relative; }
 
 @media (min-width: 768px) { .container { margin: 0px 10vw; } }
 

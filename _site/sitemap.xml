@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/personal%20development/2020/12/25/my-first-post.html</loc>
+<loc>http://susanjsp.com/personal/2020/12/24/christmas-eve.html</loc>
+<lastmod>2020-12-24T00:00:00+10:00</lastmod>
+</url>
+<url>
+<loc>http://susanjsp.com/personal%20development/2020/12/25/my-first-post.html</loc>
 <lastmod>2020-12-25T00:00:00+10:00</lastmod>
 </url>
 <url>
-<loc>/about</loc>
+<loc>http://susanjsp.com/jekyll/2020/12/26/creating-blog-with-jekyll.html</loc>
+<lastmod>2020-12-26T00:00:00+10:00</lastmod>
 </url>
 <url>
-<loc>/</loc>
+<loc>http://susanjsp.com/about</loc>
+</url>
+<url>
+<loc>http://susanjsp.com/</loc>
+</url>
+<url>
+<loc>http://susanjsp.com/posts</loc>
 </url>
 </urlset>

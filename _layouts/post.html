@@ -10,6 +10,7 @@
     {% feed_meta %}
     {% seo %}
   </head>
+
   <body>
     <div class="container blog-show-container">
       {% include header.html %}
@@ -24,8 +25,24 @@
           {{ content }}
           <p>Tags: {% for tag in page.tags %} <button>{{ tag }}</button> {% endfor %}</p>
         </article>
+        <div class="prev-next-links">
+          {% if page.previous.url %}
+          <div class="left-link">
+            <a class="previous" href="{{ page.previous.url }}">
+              << PREV <strong>{{ page.previous.title}}</strong>
+            </a>
+          </div>
+          {% endif %}
+          {% if page.next.url %}
+          <div class="right-link">
+            <a class="next" href="{{ page.next.url }}"><strong>{{ page.next.title}}</strong> NEXT >></a>
+          </div>
+          {% endif %}
+        </div>
       </main>
     </div>
+
     {% include footer.html %}
+
   </body>
 </html>
