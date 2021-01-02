@@ -29,6 +29,7 @@ locale: en_AU
 url: "http://susanjsp.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
+twitter_username: "@susanjsp_"
 twitter: "http://www.twitter.com/susanjsp_"
 github:  "http://github.com/susanjsp"
 codepen: "https://codepen.io/susanjsp"

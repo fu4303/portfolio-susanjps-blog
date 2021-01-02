@@ -3,7 +3,15 @@ title: All posts
 permalink: "/posts"
 layout: default
 ---
+<!-- Category buttons -->
+{% for category in site.categories %}
+  {{ category[0] }}
+{% endfor %}
 
+<!-- Tags?? -->
+
+<!-- Random Post -->
+<!--
 {% for post in site.posts %}
   {% include all-posts.html %}
-{% endfor %}
+{% endfor %} -->
