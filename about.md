@@ -1,6 +1,6 @@
 ---
 title: About Me
-img: "https://res.cloudinary.com/susanjsp/image/upload/v1608971801/my-blog/profile0image_frzvik.jpg"
+img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1608971801/my-blog/profile0image_frzvik.jpg"
 read_time: "2 mins"
 tags: introduction personal
 category: personal

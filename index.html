@@ -6,9 +6,11 @@ layout: default
 <h1>Susan Pan</h1>
 <!-- Image of me -->
 <h2>Recent Posts</h2>
-{% for post in site.posts %}
-  {% include post_card.html %}
-{% endfor %}
+<div class="recent-posts">
+  {% for post in site.posts %}
+    {% include post_card.html %}
+  {% endfor %}
+</div>
 
 <h2>Top Posts</h2>
 {% for post in site.posts %}

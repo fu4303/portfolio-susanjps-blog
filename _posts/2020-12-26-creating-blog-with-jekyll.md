@@ -2,13 +2,14 @@
 title: Creating my first blog with Jekyll
 description:
 read_time: "5 min"
-img:
+img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1609588319/my-blog/blog-jekyll-sm_l6d3kg.png"
+img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1609588320/my-blog/blog-jekyll-lg_wb4hqx.png"
 category: jekyll
 tags: jekyll coding
 layout: post
 ---
 
-Jekyll is a framework that makes creating static websites super simple. A static website is one where there isn't too much server-side programming. These types of websites don't need the in-depth, extensive network of heavier frameworks such as Ruby on Rails. <!--break--> Some examples include:
+Jekyll is a framework that makes creating static websites super simple. A static website is one where there isn't too much server-side programming. <!--break-->These types of websites don't need the in-depth, extensive network of heavier frameworks such as Ruby on Rails. Some examples include:
   - Blogs
   - Company websites
   - Micro-sites

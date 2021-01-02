@@ -1,6 +1,6 @@
 
 <div class="post-card">
-  <a href="{{ post.url }}"><img src="{{post.img}}"></a>
+  <a href="{{ post.url }}"><img src="{{post.img-sm}}"></a>
   <div class="post-card-content">
     <div class="post-card-content-txt">
       <p class="small-txt">
@@ -8,8 +8,8 @@
         {{ post.date | date: "%a %-d %B %Y" }} - {{ post.read_time}}
       </p>
       <a href="{{ post.url }} "><h4>{{ post.title }}</h4></a>
-      <p>{{ post.excerpt }}</p>
-      <a href="{{post.url}}" class="btn hov-green"> Read More... </a>
+      {{ post.excerpt }}
+      <a href="{{post.url}}" class="btn hov-green wide-btn"> Read More... </a>
     </div>
     <div class="post-card-footer">
       <p class="small-txt"><i class="fas fa-tags"></i>
@@ -17,7 +17,7 @@
         {{ tag }}
       {% endfor %}</p>
       <!-- <p class="small-txt">Write a comment</p> -->
-      <p class="small-txt">11 <i class="far fa-heart"></i></p>
+      <p class="small-txt"><i class="far fa-heart"></i></p>
     </div>
   </div>
 </div>

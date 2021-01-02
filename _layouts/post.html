@@ -20,7 +20,7 @@
         </p>
         <h1>{{ page.title }}</h1>
         <p>{{ post.read_time }}</p>
-        <img src="{{page.img}}" id="poster-img">
+        <img src="{{page.img-lg}}" id="poster-img">
         <article>
           {{ content }}
           <p>Tags: {% for tag in page.tags %} <button>{{ tag }}</button> {% endfor %}</p>

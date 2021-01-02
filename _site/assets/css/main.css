@@ -3044,11 +3044,13 @@ readers do not read off random characters that represent icons */
 
 @media (min-width: 550px) { .footer .social-links { display: block; } .footer br { display: none; } }
 
-.post-card { border: 1px solid black; display: flex; height: 300px; margin: 24px 0px; }
+.post-card { border: solid 1px black; max-width: 400px; margin: 16px auto; }
 
-.post-card a > img { height: 100%; width: 100%; border-right: 1px solid black; }
+.post-card a > img, .post-card > a { width: 100%; object-fit: cover; }
 
-.post-card-content { box-sizing: border-box; height: 100%; padding: 32px 32px 16px 32px; display: flex; flex-direction: column; justify-content: space-between; }
+.post-card a > img { border-bottom: solid 1px black; }
+
+.post-card-content { padding: 16px 16px 8px 16px; display: flex; flex-direction: column; justify-content: space-between; }
 
 .post-card-content h4, .post-card-content h5 { margin: 5px 0px; }
 
@@ -3061,6 +3063,10 @@ readers do not read off random characters that represent icons */
 .post-card-footer { border-top: 1px solid black; padding-top: 8px; display: flex; justify-content: space-between; }
 
 .small-txt { margin: 0; color: #7c7c7c; font-weight: 200; font-style: italic; font-size: 0.9rem; }
+
+@media (min-width: 600px) { .recent-posts { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 8px; } }
+
+@media (min-width: 900px) { .recent-posts { display: block; } .post-card { display: flex; max-width: 900px; } .post-card a > img, .post-card > a { width: 32vw; max-width: 400px; height: 300px; object-fit: cover; } .post-card a > img { border-bottom: none; border-right: solid 1px black; } .post-card .post-card-content { padding: 32px 32px 16px 32px; } }
 
 .form-wrapper { width: 90%; margin: auto; max-width: 500px; }
 
@@ -3077,6 +3083,8 @@ button { border: solid 1px black; padding: 6px; text-transform: capitalize; }
 .btn { text-transform: uppercase; padding: 8px; transition: 0.1s ease-out; }
 
 .btn:hover { border: solid 1px black; }
+
+.wide-btn { display: block; margin: 16px auto; width: 70%; text-align: center; }
 
 .hov-pink:hover { box-shadow: 3px 3px 0px #ff9aee; }
 
