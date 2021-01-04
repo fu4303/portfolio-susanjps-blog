@@ -3,15 +3,18 @@ title: All posts
 permalink: "/posts"
 layout: default
 ---
+<h1>{{ page.title }}</h1>
 <!-- Category buttons -->
-{% for category in site.categories %}
-  {{ category[0] }}
-{% endfor %}
+<div class="category-tags">
+  {% assign categories_sorted = site.categories %}
+  {% for category in categories_sorted %}
+    <button class="btn category-btn hov-green">{{ category[0] }}</button>
+  {% endfor %}
+</div>
 
+<div class="post-list">
+  {% for post in site.posts %}
+    {% include post_card.html %}
+  {% endfor %}
+</div>
 <!-- Tags?? -->
-
-<!-- Random Post -->
-<!--
-{% for post in site.posts %}
-  {% include all-posts.html %}
-{% endfor %} -->

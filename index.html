@@ -6,11 +6,12 @@ layout: default
 <h1>Susan Pan</h1>
 <!-- Image of me -->
 <h2>Recent Posts</h2>
-<div class="recent-posts">
+<div class="post-list">
   {% for post in site.posts %}
     {% include post_card.html %}
   {% endfor %}
 </div>
+<a href="/posts.html" class="btn hov-yellow">View more posts...</a>
 
 <h2>Top Posts</h2>
 {% for post in site.posts %}

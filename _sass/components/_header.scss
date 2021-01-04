@@ -1,22 +1,22 @@
 .header {
-  text-transform: uppercase;
   padding: 16px 0px;
+  text-transform: uppercase;
   background-color: $backgroundColor;
-
-  a {
-    padding: 8px;
-    transition: 0.1s ease-out;
-  }
-  a:hover {
-    border: solid 1px black;
-  }
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-@media (min-width: 450px) {
+
+@media (min-width: 550px) {
   .header {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    a {
+      padding: 8px;
+      transition: 0.1s ease-out;
+    }
+    a:hover {
+      border: solid 1px black;
+    }
   }
 }

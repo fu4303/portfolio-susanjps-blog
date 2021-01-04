@@ -11,7 +11,7 @@
 // Import components & pages
 @import "components/index";
 @import "pages/post_page.scss";
-
+@import "pages/all_posts.scss";
 
 // Root or body styles
 :root {
@@ -22,6 +22,7 @@
   a:hover {
     color: none;
   }
+  scroll-behavior: smooth;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
 }
 
 .container {
-  margin: 2.5%;
+  margin: 0 2.5%;
   max-width: 900px;
   position: relative;
 }

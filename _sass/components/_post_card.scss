@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 600px) {
-  .recent-posts {
+  .post-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 900px) {
-  .recent-posts {
+  .post-list {
     display: block;
   }
   .post-card {

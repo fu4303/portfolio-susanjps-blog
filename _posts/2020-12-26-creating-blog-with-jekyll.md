@@ -4,7 +4,7 @@ description:
 read_time: "5 min"
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1609588319/my-blog/blog-jekyll-sm_l6d3kg.png"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1609588320/my-blog/blog-jekyll-lg_wb4hqx.png"
-category: jekyll
+category: 🧪 jekyll
 tags: jekyll coding
 layout: post
 ---

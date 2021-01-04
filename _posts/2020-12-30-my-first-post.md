@@ -5,7 +5,7 @@ description:
 read_time: "1 min"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1609587601/my-blog/welcome-lg_fbnlos.png"
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1609587080/my-blog/welcome-sm_s1gase.png"
-category: "personal development"
+category: "🚀 personal development"
 tags: personal career
 layout: post
 ---
