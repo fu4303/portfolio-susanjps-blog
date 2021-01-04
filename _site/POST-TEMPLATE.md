@@ -9,8 +9,11 @@ img-lg:
 category:
 tags:
 layout: post
+likes:
 ---
 
-Images:
-index-posts: 300 x 300
-posts: max 900px wide
+personal
+personal development
+jekyll
+front-end
+

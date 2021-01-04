@@ -8,6 +8,7 @@ img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1609587080/my-blog/we
 category: "🚀 personal development"
 tags: personal career
 layout: post
+likes: 0
 ---
 
 Welcome to my blog! I've created this so that I have my own corner of the internet to write about all the things I've learnt about tech. <!--break-->

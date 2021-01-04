@@ -16,9 +16,9 @@ I'm one of the many people who've recently jumped on the coding bandwagon, and a
 
 Although I can't say I've got, say, 10 years of programming knowledge behind me, I do hope that everyone has at least one or two new tidbits of information that they can then share to their friends. And if not, well, at least you've got a new buddy in the tech space - Hi!!
 
-And since we're going to be friends, it'd be nice to know a little more about my hobbies so here are a few: \
-   🧘🏻‍♀️ Yoga \
-   🏋🏽‍♂️ Going to the gym \
+And since we're going to be friends, it'd be nice to know a little more about my hobbies so here are a few:
+   🧘🏻‍♀️ Yoga
+   🏋🏽‍♂️ Going to the gym
    🌱 Taking care of my plants
 
 Stay as long as you like but if it's time for you to head off, I'd urge you to make one last stop over on twitter and join our developer community there. I joined for the #100DaysofCode challenge and never left because everyone was so supportive and friendly.

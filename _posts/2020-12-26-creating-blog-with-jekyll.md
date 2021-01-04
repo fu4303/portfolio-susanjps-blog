@@ -7,6 +7,7 @@ img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1609588320/my-blog/bl
 category: 🧪 jekyll
 tags: jekyll coding
 layout: post
+likes: 0
 ---
 
 Jekyll is a framework that makes creating static websites super simple. A static website is one where there isn't too much server-side programming. <!--break-->These types of websites don't need the in-depth, extensive network of heavier frameworks such as Ruby on Rails. Some examples include:

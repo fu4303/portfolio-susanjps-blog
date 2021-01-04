@@ -3102,7 +3102,11 @@ button { border: solid 1px black; padding: 6px; text-transform: capitalize; }
 
 article { margin: 0px 3vw 3vw 3vw; }
 
-article p { line-height: 2rem; margin-top: 2vw; font-size: 1rem; }
+article p, article li { line-height: 2rem; margin-top: 2vw; font-size: 1rem; }
+
+article ul { list-style-type: none; }
+
+article li::before { content: "\f005"; font-family: "Font Awesome 5 Free"; color: #ffb84d; font-weight: 600; padding-right: 10px; }
 
 #poster-img { width: 95%; height: auto; object-fit: cover; border: solid 1px black; margin-left: 2.5%; }
 

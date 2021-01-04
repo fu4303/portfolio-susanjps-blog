@@ -1,0 +1,27 @@
+I"�<p>This short tutorial will show you how to create custom bullet points without using the <code class="language-plaintext highlighter-rouge">list-style-image</code> CSS property. <!--break--></p>
+
+<ol>
+  <li>set <code class="language-plaintext highlighter-rouge">list-style-type</code> of ul to ‘none’
+    <pre><code class="language-CSS">ul {
+ list-style-type: none;
+}
+</code></pre>
+  </li>
+  <li>Create ::before pseudo-element for li. These properties are compulsory!
+    <pre><code class="language-CSS">li::before {
+ content: "\f005";
+ font-family: "Font Awesome 5 Free";
+}
+</code></pre>
+    <p>3.
+```CSS
+li {
+ // Optional properties
+ padding-right: 8px;
+ color: yellow;
+ font-weight: 600;
+}</p>
+  </li>
+</ol>
+
+:ET
