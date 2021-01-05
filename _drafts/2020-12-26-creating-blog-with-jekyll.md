@@ -16,6 +16,6 @@ Jekyll is a framework that makes creating static websites super simple. A static
   - Micro-sites
   - Educational websites
 
-As I jumped from Rails to Jekyll, the installation and syntax was relatively straight-forward, I didn't bump into any obstacles until I tried using some of the jekyll gems - but more on that later. If you're just beginning, the Jekyll documentation is superb. Everything is explained well with great examples to follow. If you get stuck, look there first!
+As I jumped from Rails to Jekyll, the installation and syntax was relatively straight-forward - I didn't bump into any obstacles until I tried using some of the jekyll gems - but more on that later. If you're just beginning, the [Jekyll documentation](https://jekyllrb.com/docs/) is superb. Everything is explained well with great examples to follow. If you get stuck, look there first!
 
 
