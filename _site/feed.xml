@@ -1,33 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://susanjsp.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://susanjsp.com/" rel="alternate" type="text/html" /><updated>2021-01-05T00:18:13+10:00</updated><id>http://susanjsp.com/feed.xml</id><title type="html">Susan Pan</title><subtitle>I created this blog to document my career journey from Pharmacist to Software Engineering. I hope to solidify my learning and to also develop my written communication skills through writing technical posts about web development.</subtitle><author><name>Susan Pan</name></author><entry><title type="html">Custom bullet styles using Fontawesome</title><link href="http://susanjsp.com/%F0%9F%8E%A8%20front-end/2021/01/05/custom-bullets-using-fontawesome.html" rel="alternate" type="text/html" title="Custom bullet styles using Fontawesome" /><published>2021-01-05T00:09:19+10:00</published><updated>2021-01-05T00:09:19+10:00</updated><id>http://susanjsp.com/%F0%9F%8E%A8%20front-end/2021/01/05/custom-bullets-using-fontawesome</id><content type="html" xml:base="http://susanjsp.com/%F0%9F%8E%A8%20front-end/2021/01/05/custom-bullets-using-fontawesome.html">&lt;p&gt;This short tutorial will show you how to create custom bullet points without using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list-style-image&lt;/code&gt; CSS property. &lt;!--break--&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list-style-type&lt;/code&gt; of ul to ‘none’
-    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;list-style-type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Create ::before pseudo-element for li. These properties are compulsory!
-    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;\f005&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;Font Awesome 5 Free&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;em&gt;content&lt;/em&gt; is the Unicode of the icon on fontawesome, and remember to add the backward slash.
-&lt;em&gt;font-family&lt;/em&gt; is also needed - it will show up as an empty square if it’s not included. There are only two different font-families in the free plan: “Font Awesome 5 Free” and “Font Awesome 5 Brands” so make sure to change it if you are using brand logos. If you are on the Pro Plan, the &lt;a href=&quot;https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements&quot;&gt;official documentation&lt;/a&gt; lists the different font-families available.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Add these optional properties to make it prettier.
-    &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;yellow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
- &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;em&gt;font-weight:&lt;/em&gt; for some of the icons, adding ‘600’ as the font-weight will fill in the icon&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you’d like to learn about this in more detail, have a look at the &lt;a href=&quot;https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements&quot;&gt;official font-awesome documentation page&lt;/a&gt;.&lt;/p&gt;</content><author><name>Susan Pan</name></author><category term="🎨 front-end" /><category term="web" /><category term="development" /><summary type="html">This short tutorial will show you how to create custom bullet points without using the list-style-image CSS property.</summary></entry><entry><title type="html">Beginning my Tech Journey</title><link href="http://susanjsp.com/personal/2021/01/02/beginning-of-my-tech-journey.html" rel="alternate" type="text/html" title="Beginning my Tech Journey" /><published>2021-01-02T22:50:50+10:00</published><updated>2021-01-02T22:50:50+10:00</updated><id>http://susanjsp.com/personal/2021/01/02/beginning-of-my-tech-journey</id><content type="html" xml:base="http://susanjsp.com/personal/2021/01/02/beginning-of-my-tech-journey.html"></content><author><name>Susan Pan</name></author><category term="personal" /><category term="personal" /><summary type="html"></summary></entry><entry><title type="html">Welcome 2021!</title><link href="http://susanjsp.com/%F0%9F%92%81%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20personal/2021/01/02/happy-new-year-2021.html" rel="alternate" type="text/html" title="Welcome 2021!" /><published>2021-01-02T00:00:00+10:00</published><updated>2021-01-02T00:00:00+10:00</updated><id>http://susanjsp.com/%F0%9F%92%81%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20personal/2021/01/02/happy-new-year-2021</id><content type="html" xml:base="http://susanjsp.com/%F0%9F%92%81%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20personal/2021/01/02/happy-new-year-2021.html">&lt;p&gt;Happy new year!! It’s finally 2021, and it could not have come any sooner. I think I can confidently speak for all of us when I say 2020 was a bit of a sht-show. &lt;!--break--&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://susanjsp.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://susanjsp.com/" rel="alternate" type="text/html" /><updated>2021-01-07T23:17:33+10:00</updated><id>http://susanjsp.com/feed.xml</id><title type="html">Susan Pan</title><subtitle>I created this blog to document my career journey from Pharmacist to Software Engineering. I hope to solidify my learning and to also develop my written communication skills through writing technical posts about web development.</subtitle><author><name>Susan Pan</name></author><entry><title type="html">Welcome 2021!</title><link href="http://susanjsp.com/%F0%9F%92%81%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20personal/2021/01/02/happy-new-year-2021.html" rel="alternate" type="text/html" title="Welcome 2021!" /><published>2021-01-02T00:00:00+10:00</published><updated>2021-01-02T00:00:00+10:00</updated><id>http://susanjsp.com/%F0%9F%92%81%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20personal/2021/01/02/happy-new-year-2021</id><content type="html" xml:base="http://susanjsp.com/%F0%9F%92%81%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%20personal/2021/01/02/happy-new-year-2021.html">&lt;p&gt;Happy new year!! It’s finally 2021, and it could not have come any sooner. I think I can confidently speak for all of us when I say 2020 was a bit of a sht-show. &lt;!--break--&gt;&lt;/p&gt;
 
 &lt;p&gt;I might start off with a mini retrospective of 2020, but I’ll try not to dwell. Collectively, 2020 was a really horrible year, but there were a few small wins that I can celebrate and I hope you’ll take some time to think about yours as well.&lt;/p&gt;
 
@@ -48,12 +19,60 @@ I’m hoping to use this platform as a way for me to really bring home the core 
 
 &lt;p&gt;Most of the posts I create will be to document my progress on side-projects, my career journey or technical posts for new concepts that I come across. Although I’m only at the very beginning of my tech career, I hope there will be some things that you can learn from my posts!&lt;/p&gt;
 
-&lt;p&gt;Thanks for taking the time to read this! Feel free to stay and have a little poke around, but don’t forget to take a break and have a quick stretch before you continue :)&lt;/p&gt;</content><author><name>Susan Pan</name></author><category term="🚀 personal development" /><category term="personal" /><category term="career" /><summary type="html">Welcome to my blog! I’ve created this so that I have my own corner of the internet to write about all the things I’ve learnt about tech.</summary></entry><entry><title type="html">Creating my first blog with Jekyll</title><link href="http://susanjsp.com/%F0%9F%A7%AA%20jekyll/2020/12/26/creating-blog-with-jekyll.html" rel="alternate" type="text/html" title="Creating my first blog with Jekyll" /><published>2020-12-26T00:00:00+10:00</published><updated>2020-12-26T00:00:00+10:00</updated><id>http://susanjsp.com/%F0%9F%A7%AA%20jekyll/2020/12/26/creating-blog-with-jekyll</id><content type="html" xml:base="http://susanjsp.com/%F0%9F%A7%AA%20jekyll/2020/12/26/creating-blog-with-jekyll.html">&lt;p&gt;Jekyll is a framework that makes creating static websites super simple. A static website is one where there isn’t too much server-side programming. &lt;!--break--&gt;These types of websites don’t need the in-depth, extensive network of heavier frameworks such as Ruby on Rails. Some examples include:&lt;/p&gt;
+&lt;p&gt;Thanks for taking the time to read this! Feel free to stay and have a little poke around, but don’t forget to take a break and have a quick stretch before you continue :)&lt;/p&gt;</content><author><name>Susan Pan</name></author><category term="🚀 personal development" /><category term="personal" /><category term="career" /><summary type="html">Welcome to my blog! I’ve created this so that I have my own corner of the internet to write about all the things I’ve learnt about tech.</summary></entry><entry><title type="html">Creating a website for our local commumity</title><link href="http://susanjsp.com/%F0%9F%92%BC/side/projects/2020/01/07/community-club-side-project.html" rel="alternate" type="text/html" title="Creating a website for our local commumity" /><published>2020-01-07T00:00:00+10:00</published><updated>2020-01-07T00:00:00+10:00</updated><id>http://susanjsp.com/%F0%9F%92%BC/side/projects/2020/01/07/community-club-side-project</id><content type="html" xml:base="http://susanjsp.com/%F0%9F%92%BC/side/projects/2020/01/07/community-club-side-project.html">&lt;p&gt;I had a chat with my friend recently about the state of badminton websites in our local area and it was eye-opening (in the worst way). This project is a result of that conversation. &lt;!--break--&gt;&lt;/p&gt;
+
+&lt;p&gt;One of my friends has been playing badminton for a few years now. Whenever he wanted to play, he would have to scour the local facebook pages and websites to find out if there were any sessions available that night. Not only that, there was no information on whether memberships were required, or if there were any services at the location - ie. eftpos only or on-site parking. This is where I got the idea of creating a social badminton website, used to aggregrate information about clubs and sessions currently in Queensland (Brisbane only for now).&lt;/p&gt;
+
+&lt;p&gt;Originally, I wanted to wait and learn some javascript frameworks to create this app, but since I was so excited about the idea, I just powered on ahead. To my surprise, there was a lot of basic rails information that I’d already forgotten but with the help of some pre-made templates and the rails docs my project was on it’s way!&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-did-today&quot;&gt;What I did today&lt;/h3&gt;
+
+&lt;p&gt;Today I worked on visualising the relational database by drawing the columns and connections.&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Blogs&lt;/li&gt;
-  &lt;li&gt;Company websites&lt;/li&gt;
-  &lt;li&gt;Micro-sites&lt;/li&gt;
-  &lt;li&gt;Educational websites&lt;/li&gt;
+  &lt;li&gt;First, I created my rails app with the help of a template which already includes the devise, font-awesome and simple form gems pre-installled&lt;/li&gt;
+  &lt;li&gt;Created my database tables &amp;amp; schema&lt;/li&gt;
+  &lt;li&gt;Created a basic seedfile to test the relationships between the objects and ensure the models had the correct validations included&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As I jumped from Rails to Jekyll, the installation and syntax was relatively straight-forward - I didn’t bump into any obstacles until I tried using some of the jekyll gems - but more on that later. If you’re just beginning, the &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Jekyll documentation&lt;/a&gt; is superb. Everything is explained well with great examples to follow. If you get stuck, look there first!&lt;/p&gt;</content><author><name>Susan Pan</name></author><category term="🧪 jekyll" /><category term="jekyll" /><category term="coding" /><summary type="html">Jekyll is a framework that makes creating static websites super simple. A static website is one where there isn’t too much server-side programming.</summary></entry></feed>
+&lt;p&gt;Here is some of the information I came across today:&lt;/p&gt;
+
+&lt;h3 id=&quot;some-useful-rails-commands&quot;&gt;Some useful rails commands&lt;/h3&gt;
+&lt;p&gt;I’ll be using a house object as an example (where ‘user’ is the owner)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rails generate model House address, age:integer, user:references
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;With the references data_type, rails will automatically create a column called user_id and generate the foreign keys in the schema&lt;/li&gt;
+  &lt;li&gt;model name is singular and capitalized&lt;/li&gt;
+  &lt;li&gt;if not datatype is included, defaults to ‘:string’&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rails g migration AddOccupantsToHouse occupants:integer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adding ‘occupants’ column to the House model, don’t forget to specify data-type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rails destroy migration RemoveOccupantsFromHouse
+rails destroy model House occupants:integer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Both commands remove the ‘occupants’ column from the House model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;datetime-data-type&quot;&gt;DateTime data-type&lt;/h3&gt;
+&lt;p&gt;Rails includes a data-type called ‘DateTime’, which can be used when creating a column in a relational database.&lt;/p&gt;
+
+&lt;p&gt;To create seed data for a DateTime data-type, I used the following syntax:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Date.new(2020, 1, 7, 17, 30, 00)
+Date.strptime(7/1/2020 17:00, %d/%m/%Y HH:MM)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;if using ‘strptime’ method you can rearrange the format and update the date to follow the new format&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Read more about DateTime in the official Rails Documentation &lt;a href=&quot;https://api.rubyonrails.org/classes/DateTime.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For tomorrow:&lt;/strong&gt; my task will to be generate the controllers and corresponding views, maybe set up cloudinary and design the show pages for clubs and locations&lt;/p&gt;
+
+&lt;p&gt;Signing off for today, thanks for reading!&lt;/p&gt;</content><author><name>Susan Pan</name></author><category term="💼" /><category term="side" /><category term="projects" /><category term="badminton" /><category term="app," /><category term="rails" /><summary type="html">I had a chat with my friend recently about the state of badminton websites in our local area and it was eye-opening (in the worst way). This project is a result of that conversation.</summary></entry></feed>

@@ -1,9 +1,0 @@
-I"<<p>This short tutorial will show you how to create custom bullet points without using the <code class="language-plaintext highlighter-rouge">list-style-image</code> CSS property.</p>
-
-<ol>
-  <li>set <code class="language-plaintext highlighter-rouge">list-style-type</code> of ul to ‘none’</li>
-</ol>
-
-<p>2.</p>
-
-:ET
