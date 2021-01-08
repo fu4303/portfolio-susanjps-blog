@@ -53,16 +53,17 @@
     <div class="container blog-show-container">
       <div class="header">
   <div class="page-links">
-    <a href="/" class="hov-pink"><i class="fas fa-home"></i> home</a>
-    <a href="/about" class="hov-yellow"><i class="far fa-smile"></i> about</a>
-    <a href="/posts" class="hov-blue"><i class="fas fa-feather-alt"></i> posts</a>
-    <a href="" class="hov-purple"><i class="far fa-file-code"></i> projects</a>
+    <a href="/" class="hov-pink header-btn"><i class="fas fa-home"></i><br> home</a>
+    <a href="/about" class="hov-yellow header-btn"><i class="far fa-smile"></i><br> about</a>
+    <a href="/posts" class="hov-blue header-btn"><i class="fas fa-feather-alt"></i><br> posts</a>
+    <a href="" class="hov-purple header-btn"><i class="far fa-file-code"></i><br> projects</a>
   </div>
   <div class="social-links">
-    <a href="https://www.linkedin.com/in/susanpan96/" class="hov-green"><i class="fab fa-linkedin"></i></a>
-    <a href="http://www.twitter.com/susanjsp_" class="hov-blue"><i class="fab fa-twitter"></i></a>
-    <a href="http://github.com/susanjsp" class="hov-purple"><i class="fab fa-github-alt"></i></a>
-    <a href="https://codepen.io/susanjsp" class="hov-yellow"><i class="fab fa-codepen"></i></a>
+    <button class="mobile-social-btn btn hov-pink"><i class="fab fa-twitter"></i><br>SOCIALS</button>
+    <a href="https://www.linkedin.com/in/susanpan96/" class="hov-green dropdown"><i class="fab fa-linkedin"></i></a>
+    <a href="http://www.twitter.com/susanjsp_" class="hov-blue dropdown"><i class="fab fa-twitter"></i></a>
+    <a href="http://github.com/susanjsp" class="hov-purple dropdown"><i class="fab fa-github-alt"></i></a>
+    <a href="https://codepen.io/susanjsp" class="hov-yellow dropdown"><i class="fab fa-codepen"></i></a>
   </div>
 </div>
       <main>
@@ -93,7 +94,7 @@
 
 <h3 id="some-useful-rails-commands">Some useful rails commands</h3>
 <p>I’ll be using a house object as an example (where ‘user’ is the owner)</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails generate model House address, age:integer, user:references
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rails</span> <span class="n">generate</span> <span class="n">model</span> <span class="no">House</span> <span class="n">address</span><span class="p">,</span> <span class="n">age</span><span class="ss">:integer</span><span class="p">,</span> <span class="n">user</span><span class="ss">:references</span>
 </code></pre></div></div>
 <ul>
   <li>With the references data_type, rails will automatically create a column called user_id and generate the foreign keys in the schema</li>

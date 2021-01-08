@@ -47,3 +47,32 @@ button {
     box-shadow: 3px 3px 0px $yellow;
   }
 }
+.mobile-social-btn {
+  border: none;
+  background-color: $backgroundColor;
+  margin-left: 4px;
+  font-weight: 200;
+}
+.header-btn, .social-links, .mobile-social-btn {
+  text-align: center;
+  font-size: 0.8rem;
+  i {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 550px) {
+  .header-btn, .social-links {
+    font-size: 1rem;
+    i {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    br {
+      display: none;
+    }
+  }
+  .mobile-social-btn {
+    display: none;
+  }
+}

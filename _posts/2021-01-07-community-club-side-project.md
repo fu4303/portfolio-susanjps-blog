@@ -28,7 +28,7 @@ Here is some of the information I came across today:
 
 ### Some useful rails commands
 I'll be using a house object as an example (where 'user' is the owner)
-```
+```ruby
 rails generate model House address, age:integer, user:references
 ```
 - With the references data_type, rails will automatically create a column called user_id and generate the foreign keys in the schema
