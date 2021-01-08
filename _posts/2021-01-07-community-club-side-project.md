@@ -4,7 +4,7 @@ description:
 read_time: 5 min
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1610063629/my-blog/baddy-1-sm_yepgvk.png"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1610063629/my-blog/baddy-1-lg_u8olgk.png"
-categories: 💼 side projects
+category: "💼 side projects"
 tags: badminton app, rails
 layout: post
 likes: 0
