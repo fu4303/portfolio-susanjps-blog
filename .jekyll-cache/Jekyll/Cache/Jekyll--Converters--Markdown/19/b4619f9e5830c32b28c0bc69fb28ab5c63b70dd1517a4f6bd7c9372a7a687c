@@ -1,4 +1,4 @@
-I"<p>I had a chat with my friend recently about the state of badminton websites in our local area and it was eye-opening (in the worst way). This project is a result of that conversation. <!--break--></p>
+I"ì<p>I had a chat with my friend recently about the state of badminton websites in our local area. This project is a result of that conversation. <!--break--></p>
 
 <p>One of my friends has been playing badminton for a few years now. Whenever he wanted to play, he would have to scour the local facebook pages and websites to find out if there were any sessions available that night. Not only that, there was no information on whether memberships were required, or if there were any services at the location - ie. eftpos only or on-site parking. This is where I got the idea of creating a social badminton website, used to aggregrate information about clubs and sessions currently in Queensland (Brisbane only for now).</p>
 
@@ -52,7 +52,7 @@ Date.strptime(7/1/2020 17:00, %d/%m/%Y HH:MM)
 
 <p>Read more about DateTime in the official Rails Documentation <a href="https://api.rubyonrails.org/classes/DateTime.html">here</a></p>
 
-<p>For tomorrow: my task will to be generate the controllers and corresponding views, maybe set up cloudinary and design the show pages for clubs and locations</p>
+<p><strong>For tomorrow:</strong> my task will to be generate the controllers and corresponding views, maybe set up cloudinary and design the show pages for clubs and locations</p>
 
 <p>Signing off for today, thanks for reading!</p>
 :ET

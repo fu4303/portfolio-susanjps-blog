@@ -2,15 +2,15 @@
 title: Creating a website for our local commumity
 description:
 read_time: 5 min
-img-sm:
-img-lg:
+img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1610063629/my-blog/baddy-1-sm_yepgvk.png"
+img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1610063629/my-blog/baddy-1-lg_u8olgk.png"
 categories: 💼 side projects
 tags: badminton app, rails
 layout: post
 likes: 0
 ---
 
-I had a chat with my friend recently about the state of badminton websites in our local area and it was eye-opening (in the worst way). This project is a result of that conversation. <!--break-->
+I had a chat with my friend recently about the state of badminton websites in our local area. This project is a result of that conversation. <!--break-->
 
 One of my friends has been playing badminton for a few years now. Whenever he wanted to play, he would have to scour the local facebook pages and websites to find out if there were any sessions available that night. Not only that, there was no information on whether memberships were required, or if there were any services at the location - ie. eftpos only or on-site parking. This is where I got the idea of creating a social badminton website, used to aggregrate information about clubs and sessions currently in Queensland (Brisbane only for now).
 
