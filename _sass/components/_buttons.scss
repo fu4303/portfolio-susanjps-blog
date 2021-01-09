@@ -21,39 +21,12 @@ button {
   background-color: white;
   margin: 0px 8px;
 }
-
-.hov-pink {
-  &:hover {
-    box-shadow: 3px 3px 0px $pink;
-  }
-}
-.hov-green {
-  &:hover {
-    box-shadow: 3px 3px 0px $green;
-  }
-}
-.hov-purple {
-  &:hover {
-    box-shadow: 3px 3px 0px $purple;
-  }
-}
-.hov-blue {
-  &:hover {
-    box-shadow: 3px 3px 0px $blue;
-  }
-}
-.hov-yellow {
-  &:hover {
-    box-shadow: 3px 3px 0px $yellow;
-  }
-}
 .mobile-social-btn {
   border: none;
   background-color: $backgroundColor;
-  margin-left: 4px;
   font-weight: 200;
 }
-.header-btn, .social-links, .mobile-social-btn {
+.header-btn, .mobile-social-btn {
   text-align: center;
   font-size: 0.8rem;
   i {
@@ -61,8 +34,47 @@ button {
     margin-bottom: 8px;
   }
 }
+.view-more {
+  display: grid;
+  place-content: center;
+  margin: 0 20%;
+}
+
+// Button hover colours
+.hov-pink {
+  &:hover {
+    text-shadow: 2px 2px 0px $pink;
+    box-shadow: 3px 3px 0px $pink;
+  }
+}
+.hov-green {
+  &:hover {
+    text-shadow: 2px 2px 2px $green;
+    box-shadow: 3px 3px 0px $green;
+  }
+}
+.hov-purple {
+  &:hover {
+    text-shadow: 2px 2px 2px $purple;
+    box-shadow: 3px 3px 0px $purple;
+  }
+}
+.hov-blue {
+  &:hover {
+    text-shadow: 2px 2px 2px $blue;
+    box-shadow: 3px 3px 0px $blue;
+  }
+}
+.hov-yellow {
+  &:hover {
+    text-shadow: 2px 2px 2px $yellow;
+    box-shadow: 3px 3px 0px $yellow;
+  }
+}
+
+// Button media queries
 @media (min-width: 550px) {
-  .header-btn, .social-links {
+  .header-btn {
     font-size: 1rem;
     i {
       font-size: 1rem;

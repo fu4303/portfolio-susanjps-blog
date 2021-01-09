@@ -17,7 +17,7 @@
   i {
     margin: 0px 8px;
   }
-  .social-links {
+  .social-links-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 5%;
@@ -27,7 +27,7 @@
 
 @media (min-width: 550px) {
   .footer {
-    .social-links {
+    .social-links-footer {
     display: block;
     }
     br {

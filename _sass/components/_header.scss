@@ -15,26 +15,37 @@
     border: solid 1px black;
   }
 }
-.page-links, .social-links {
+.page-links {
   display: contents;
 }
-.social-links {
-  a {
-    display: none;
-  }
+.social-links-header {
+  display: none;
 }
-.dropdown {
-  display: block;
+.active {
+  position: absolute;
+  right: 0px;
+  display: grid;
+  top: 80px;
+  a {
+    border: 1px solid black;
+    background-color: $backgroundColor;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 @media (min-width: 550px) {
   .header {
     padding: 16px 0px;
   }
   .page-links { display: flex; }
-  .social-links {
+  .social-links-header {
     display: flex;
     a {
       display: block;
+      border: none;
+      margin-bottom: 0px;
+      padding: 8px;
     }
   }
 }
