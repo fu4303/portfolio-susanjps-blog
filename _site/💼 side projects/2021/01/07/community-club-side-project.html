@@ -94,7 +94,7 @@
 
 <h3 id="some-useful-rails-commands">Some useful rails commands</h3>
 <p>I’ll be using a house object as an example (where ‘user’ is the owner)</p>
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rails</span> <span class="n">generate</span> <span class="n">model</span> <span class="no">House</span> <span class="n">address</span><span class="p">,</span> <span class="n">age</span><span class="ss">:integer</span><span class="p">,</span> <span class="n">user</span><span class="ss">:references</span>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rails</span> <span class="n">generate</span> <span class="n">model</span> <span class="no">House</span> <span class="n">address</span><span class="p">,</span> <span class="n">age</span><span class="ss">:integer</span><span class="p">,</span> <span class="n">user</span><span class="ss">:references</span>
 </code></pre></div></div>
 <ul>
   <li>With the references data_type, rails will automatically create a column called user_id and generate the foreign keys in the schema</li>
@@ -102,14 +102,14 @@
   <li>if not datatype is included, defaults to ‘:string’</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails g migration AddOccupantsToHouse occupants:integer
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rails</span> <span class="n">g</span> <span class="n">migration</span> <span class="no">AddOccupantsToHouse</span> <span class="n">occupants</span><span class="ss">:integer</span>
 </code></pre></div></div>
 <ul>
   <li>Adding ‘occupants’ column to the House model, don’t forget to specify data-type</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails destroy migration RemoveOccupantsFromHouse
-rails destroy model House occupants:integer
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rails</span> <span class="n">destroy</span> <span class="n">migration</span> <span class="no">RemoveOccupantsFromHouse</span>
+<span class="n">rails</span> <span class="n">destroy</span> <span class="n">model</span> <span class="no">House</span> <span class="n">occupants</span><span class="ss">:integer</span>
 </code></pre></div></div>
 <ul>
   <li>Both commands remove the ‘occupants’ column from the House model</li>
@@ -119,8 +119,8 @@ rails destroy model House occupants:integer
 <p>Rails includes a data-type called ‘DateTime’, which can be used when creating a column in a relational database.</p>
 
 <p>To create seed data for a DateTime data-type, I used the following syntax:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Date.new(2020, 1, 7, 17, 30, 00)
-Date.strptime(7/1/2020 17:00, %d/%m/%Y HH:MM)
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">Date</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mo">00</span><span class="p">)</span>
+<span class="no">Date</span><span class="p">.</span><span class="nf">strptime</span><span class="p">(</span><span class="mi">7</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="mi">2020</span> <span class="mi">17</span><span class="p">:</span><span class="mo">00</span><span class="p">,</span> <span class="o">%</span><span class="n">d</span><span class="o">/%</span><span class="n">m</span><span class="o">/%</span><span class="no">Y</span> <span class="no">HH</span><span class="ss">:MM</span><span class="p">)</span>
 </code></pre></div></div>
 <ul>
   <li>if using ‘strptime’ method you can rearrange the format and update the date to follow the new format</li>

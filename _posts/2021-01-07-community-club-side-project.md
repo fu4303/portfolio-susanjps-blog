@@ -28,19 +28,19 @@ Here is some of the information I came across today:
 
 ### Some useful rails commands
 I'll be using a house object as an example (where 'user' is the owner)
-```ruby
+```rb
 rails generate model House address, age:integer, user:references
 ```
 - With the references data_type, rails will automatically create a column called user_id and generate the foreign keys in the schema
 - model name is singular and capitalized
 - if not datatype is included, defaults to ':string'
 
-```
+```rb
 rails g migration AddOccupantsToHouse occupants:integer
 ```
 - Adding 'occupants' column to the House model, don't forget to specify data-type
 
-```
+```rb
 rails destroy migration RemoveOccupantsFromHouse
 rails destroy model House occupants:integer
 ```
@@ -50,7 +50,7 @@ rails destroy model House occupants:integer
 Rails includes a data-type called 'DateTime', which can be used when creating a column in a relational database.
 
 To create seed data for a DateTime data-type, I used the following syntax:
-```
+```rb
 Date.new(2020, 1, 7, 17, 30, 00)
 Date.strptime(7/1/2020 17:00, %d/%m/%Y HH:MM)
 ```
