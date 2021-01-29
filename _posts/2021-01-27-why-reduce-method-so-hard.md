@@ -2,8 +2,8 @@
 title: Using the Reduce function in JavaScript
 description: JavaScript series - reduce function
 read_time: "5 min"
-img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1609587601/my-blog/welcome-lg_fbnlos.png"
-img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1609587080/my-blog/welcome-sm_s1gase.png"
+img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1611932028/my-blog/reduce-lg_ukn2aw.png"
+img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1611932027/my-blog/reduce-sm_trqfbp.png"
 category: "🔅 JavaScript"
 tags: javascript
 layout: post
