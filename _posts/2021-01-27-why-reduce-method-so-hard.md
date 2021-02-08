@@ -9,8 +9,7 @@ tags: javascript
 layout: post
 likes: 0
 ---
-As I'm doing a deep dive into JavaScript, I thought I'd come here and share some of the knowledge I've gained and hopefully make things a little easier for some of you out there. Today, we're tackling...
-the Reduce method! <!--break-->
+As I'm doing a deep dive into JavaScript, I thought I'd come here and share some of the knowledge I've gained and hopefully make things a little easier  <!--break--> for some of you out there. Today, we're tackling... the Reduce method!
 
 Spending months learning ruby is pretty good on the scale of things - writing variables, functions and even programs are pretty intuitive and readable. However, jumping from ruby to javascript was a steep learning curve. Whether it was the syntax, or the shift in the type of programming that's being done, it felt like I was taking a deep dive into the ocean without knowing how to swim.
 
