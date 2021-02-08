@@ -13,7 +13,7 @@ likes: 0
 Could not retect rake tasks
 ensure you can run `$ bundle exec rake -P` against your app
 and using the production group of your Gemfile.
-
+<!--break-->
 [[Pasted image 20210208214751.png]]
 
 I ran the `bundle exec rake -P` and everything worked fine, so it wasn't to do with that.
