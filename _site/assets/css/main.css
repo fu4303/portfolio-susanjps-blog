@@ -3244,7 +3244,7 @@ readers do not read off random characters that represent icons */
 
 .post-card { border: solid 1px black; max-width: 400px; margin: 16px auto; }
 
-.post-card a > img, .post-card > a { width: 100%; height: 100%; object-fit: cover; }
+.post-card a > img, .post-card > a { width: 100%; object-fit: cover; }
 
 .post-card a > img { border-bottom: solid 1px black; }
 
