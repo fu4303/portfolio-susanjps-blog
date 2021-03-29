@@ -1,6 +1,6 @@
 ---
-title: Book Chat - A Gentleman in Moscow by Amor Towles
-description: February Book Chat
+title: February Book Chat - A Gentleman in Moscow by Amor Towles
+description: This book is fun and so charming. I can't help but imagine the story as an animation feature film as the language
 read_time: "1 min"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1613178312/my-blog/gentleman-in-moscow-lg_cv5njw.png"
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1613178311/my-blog/gentleman-in-moscow-sm_ishzlk.png"

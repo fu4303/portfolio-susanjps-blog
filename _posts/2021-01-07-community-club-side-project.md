@@ -1,6 +1,6 @@
 ---
 title: Creating a website for our local commumity
-description:
+description: I had a chat with my friend recently about the state of badminton websites in our local area. This project is a result of that conversation.
 read_time: 5 min
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1610063629/my-blog/baddy-1-sm_yepgvk.png"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1610063629/my-blog/baddy-1-lg_u8olgk.png"
