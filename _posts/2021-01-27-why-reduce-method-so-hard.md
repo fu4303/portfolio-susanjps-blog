@@ -1,6 +1,6 @@
 ---
 title: Using the Reduce function in JavaScript
-description: JavaScript series - reduce function
+description: As I'm doing a deep dive into JavaScript, I thought I'd come here and share some of the knowledge I've gained and hopefully make things a little easier
 read_time: "5 min"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1611932028/my-blog/reduce-lg_ukn2aw.png"
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1611932027/my-blog/reduce-sm_trqfbp.png"

@@ -1,7 +1,6 @@
 ---
 title: My first blog post!
-# author:
-description:
+description: Welcome to my blog! I've created this so that I have my own corner of the internet to write about all the things I've learnt about tech.
 read_time: "1 min"
 img-lg: "https://res.cloudinary.com/susanjsp/image/upload/v1609587601/my-blog/welcome-lg_fbnlos.png"
 img-sm: "https://res.cloudinary.com/susanjsp/image/upload/v1609587080/my-blog/welcome-sm_s1gase.png"
